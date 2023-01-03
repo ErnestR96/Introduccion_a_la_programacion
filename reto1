@@ -1,0 +1,47 @@
+##Crear una función con tres parámetros que sean números que se suman entre sí.
+public int suma(int num1, int num2, int num3) {
+  int resultado = num1 + num2 + num3;
+  return resultado;
+}
+
+
+##Llamar a la función en el main y darle valores.
+
+public static void main(String[] args) {
+  // Llamamos a la función "suma" y le pasamos tres valores
+  int resultado = suma(1, 2, 3);
+  
+  // Imprimimos el resultado en pantalla
+  System.out.println(resultado);
+}
+
+public class Coche {
+  // Variable que almacena el número de puertas del coche
+  private int numPuertas;
+  
+  // Constructor de la clase
+  public Coche(int numPuertas) {
+    this.numPuertas = numPuertas;
+  }
+  
+  // Función que incrementa el número de puertas del coche
+  public void addPuerta() {
+    numPuertas++;
+  }
+  
+  // Método que devuelve el número de puertas del coche
+  public int getNumPuertas() {
+    return numPuertas;
+  }
+}
+
+public static void main(String[] args) {
+  // Creamos un objeto "miCoche" con dos puertas
+  Coche miCoche = new Coche(2);
+  
+  // Añadimos una puerta al coche
+  miCoche.addPuerta();
+  
+  // Mostramos el número de puertas del coche
+  System.out.println("El coche tiene " + miCoche.getNumPuertas() + " puertas.");
+}
